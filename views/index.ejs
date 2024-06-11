@@ -10,14 +10,18 @@
   <a href="/create">create</a>
 <br><br><br><br><br>
 <% allBook.forEach((data)=> {%>
-
-<h1>POSTER-URL-<%= data.Poster%></h1>
+  
 <h1>Name-<%= data.Name%></h1>
-<h1>Author-<%= data.Author%></h1>
-<h1>Price-<%= data.Isbn%></h1>
-<h1>Isbn-<%= data.Price%></h1>
+<h1>Title-<%= data.Title%></h1>
+<h1>Price-<%= data.Price%></h1>
+<h1>Number-<%= data.Contact%></h1>
 <h1>description-<%= data.description%></h1>
-<a href="/explore/<%=data._id%>">explore</a>
+<img src="<%=data.Poster%>"
+  height="200px"
+  width="200px"
+   alt="">
+   <br><br>
+   <a href="/explore/<%=data._id%>">explore</a>
 <% }) %>
   
 </body>

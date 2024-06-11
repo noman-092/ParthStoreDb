@@ -7,12 +7,19 @@
 </head>
 <body>
     <form action="/update/<%=books._id%>" method="post">
-        <input value="<%=books.Poster%>" type="text" placeholder="POSTER-URL" name="Poster"><br> <br>
-        <input value="<%=books.Name%>"  type="text" placeholder="Book-Name" name="Name"><br> <br>
-        <input value="<%=books.Author%>"  type="text" placeholder="Author" name="Author"><br> <br>
-        <input value="<%=books.Isbn%>"  type="number" placeholder="price" name="Price"><br><br>
-        <input value="<%=books.Price%>"  type="text" placeholder="ISBN NO>" name="Isbn"><br><br>
-        <textarea value="<%=books.description%>"  name="description"></textarea>
+        
+        <input  value="<%=books.Name%>" type="text" placeholder="Owner-Name" name="Name"><br> <br>
+        <input  value="<%=books.Title%>" type="text" placeholder="Property-Title" name="Title"><br> <br>
+        <input  value="<%=books.Price%>" type="text" placeholder="Price" name="Price"><br> <br>
+        <input  value="<%=books.Address%>" type="text" placeholder="Address" name="Address"><br><br>
+        <input  value="<%=books.Contact%>" type="number" placeholder="Phone-Number" name="Contact"><br><br>
+        <textarea  value="<%=books.description%>" name="description"></textarea>
+        <br><br>
+        <input  value="<%=books.Poster%>" type="text" placeholder="Property-Image" name="Poster"><br> <br>
+ <img src="<%=books.Poster%>"
+ height="200px"
+ width="200px"
+  alt="">
 
         <br> <br>  
         <button>update</button>

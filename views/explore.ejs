@@ -7,7 +7,10 @@
 </head>
 <body>
     
-   <h1><%=book.Poster%></h1>
+    <img src="<%=book.Poster%>"
+    height="200px"
+    width="200px"
+     alt="">
    <h1><%=book.Name%></h1>
    <h1><%=book.Author%></h1>
    <h1><%=book.Price%></h1>
@@ -17,7 +20,7 @@
    <a href="/update/<%=book._id%>">update</a><br> <br>
    <a href="/delete/<%=book._id%>">delete</a><br> <br>
     
-   
+
     
 </body>
 </html>
